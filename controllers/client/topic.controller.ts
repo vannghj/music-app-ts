@@ -7,6 +7,7 @@ export const topics = async (req:Request, res: Response) => {
     });
     console.log(topics);
     res.render("client/pages/topics/index", {
-        pageTitle: "Chu de bai hat"
+        pageTitle: "Chu de bai hat",
+        topics: topics
     });
 }
